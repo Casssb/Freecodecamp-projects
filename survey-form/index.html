@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">VST Synth Survey</h1>
+    <p id="description">Tell us about your favourite synth</p>
+
+    <form id="survey-form">
+        <fieldset class="peronal-details">
+            <legend>Enter your personal details</legend>
+
+            <label id="name-label">First Name</label>
+            <input type="text" name="first name" id="name" required placeholder="Enter your first name">
+
+            <label>Surname</label>
+            <input type="text" name="surname" id="name" required placeholder="Enter your last name">
+
+            <label id="email-label">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email address">
+
+            <label id="number-label">Age</label>
+            <input type="number" name="number" id="number" min="13" max="120"  placeholder="Age">
+
+        </fieldset>
+
+        <fieldset class="time-producing">
+            <legend>How long have you been producing?</legend>
+            <label class="radio"><input name="time-producing" type="radio" value="0-3" checked>0-3 months</label>
+            <label class="radio"><input name="time-producing" type="radio" value="3-1">3 months - 1 year</label>
+            <label class="radio"><input name="time-producing" type="radio" value="1-3">1-3 years</label>
+            <label class="radio"><input name="time-producing" type="radio" value="3-5">3-5 years</label>
+            <label class="radio"><input name="time-producing" type="radio" value="5+">5+ years</label>
+        </fieldset>
+
+        <fieldset class="fav-synth">
+            <legend>Your favourite synth</legend>
+            <select name="fav synth" id="dropdown">
+                <option value="">(select one)</option>
+                <option value="serum">Xfer- Serum</option>
+                <option value="diva">U-He- Diva</option>
+                <option value="massive-x">Native Instruments- Massive X</option>
+                <option value="phaseplant">Kilohearts- Phaseplant</option>
+                <option value="pigments">Arturia- Pigments</option>
+                <option value="omnisphere">Spectrasonics- Omnisphere</option>
+                <option value="spire">Reveal Sound- Spire</option>
+                <option value="fm8">Native Instruments- FM8</option>
+                <option value="vital">Vital Audio- Vital</option>
+                <option value="dune-3">Synapse Audio- Dune 3</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="fav-genre">
+            <legend>Genres that you enjoy producing</legend>
+            <label class="check"><input name="genre" value="dnb" type="checkbox">Drum & Bass</label>
+            <label class="check"><input name="genre" value="dub-2005" type="checkbox">Dubstep (2005)</label>
+            <label class="check"><input name="genre" value="dub-modern" type="checkbox">Dubstep (modern)</label>
+            <label class="check"><input name="genre" value="house" type="checkbox">House</label>
+            <label class="check"><input name="genre" value="chill" type="checkbox">Downtempo (chillout)</label>
+            <label class="check"><input name="genre" value="breaks" type="checkbox">Breakbeat</label>
+            <label class="check"><input name="genre" value="trap" type="checkbox">Trap</label>
+            <label class="check"><input name="genre" value="low-fi" type="checkbox">Low-Fi</label>
+            <label class="check"><input name="genre" value="tech" type="checkbox">Minimal (tech)</label>
+        </fieldset>
+
+        <fieldset class="free-text">
+            <legend>Features that you'd like added?</legend>
+            <textarea rows="10" placeholder="Enter your suggestions here..."></textarea>
+        </fieldset>
+
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
