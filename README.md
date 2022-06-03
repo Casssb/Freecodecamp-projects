@@ -1,5 +1,5 @@
 # Freecodecamp-projects
-Collection of the projects I've complete working on the FreeCodeCamp Curriculum.
+Collection of the projects I've completed working on the FreeCodeCamp curriculum.
 
 ## Responsive Web Design Projects
 1. Build A Survey Form - [View On CodePen](https://codepen.io/casssb/pen/rNJJqLX).
