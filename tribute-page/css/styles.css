@@ -83,6 +83,7 @@ li:hover {
 
 figcaption {
     color: var(--main-orange);
+    margin-bottom: 2rem;
 }
 
 /* tribute info section styling */
@@ -90,27 +91,60 @@ figcaption {
 #tribute-info {
     background-color: var(--main-orange);
     color: var(--main-grey);
-    display: flex;
     justify-content: center;
+}
+
+#tribute-info h1 {
+    font-family: 'Lobster', Courier, monospace;
+    margin: 1rem;
+    font-size: xx-large;
 }
 
 .info-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     height: auto;
 }
 
 .info-container {
-    max-width: 32%;
+    max-width: 60%;
     height: auto;
     border: 0.2rem solid var(--main-grey);
     border-radius: 0.5rem;
-    margin: 2rem 0.1rem;
+    margin: 2rem 1rem;
 }
 
 
 .info-container p {
     margin: 0.5rem;
     flex: auto;
+}
+
+/* review section styling */
+
+#reviews h1 {
+    font-family: 'Lobster', Courier, monospace;
+    font-size: xx-large;
+    margin: 2rem 0;
+}
+
+#reviews h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#reviews {
+    background-color: var(--main-grey);
+    color: var(--main-orange);
+    justify-content: center;
+}
+
+.review-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    padding: 2rem 1rem 1rem 1rem;
 }
