@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-orange: rgb(247, 103, 37);
+    --main-grey: rgb(51, 48, 46);
+}
+
+/* general styles */
+body {
+    font-family: 'Acme', Courier, monospace;
+    font-size: medium;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* header styling */
+header {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: var(--main-orange);
+    opacity: 0.9;
+}
+
+header ul {
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+li {
+    display: inline;
+    padding: 0 1rem;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--main-grey)
+}
+
+li:hover {
+    background-color: rgb(223, 143, 78);
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+/* image section styling */
+
+#title {
+    background-color: var(--main-grey);
+    padding-top: 2rem;
+}
+
+#title figure img {
+    max-width: 80%;
+    height: auto;
+    margin: 2rem 0 0 0;
+    border: 2px solid var(--main-orange);
+    border-radius: 0.5rem;
+}
+#title h1 {
+    font-family: 'Lobster', Courier, monospace;
+    font-size: xx-large;
+    margin-top: 2rem;
+    color: var(--main-orange);
+}
+
+#title h2 {
+    font-size: x-large;
+    color: var(--main-orange);
+}
+
+figcaption {
+    color: var(--main-orange);
+}
+
+/* tribute info section styling */
+
+#tribute-info {
+    background-color: var(--main-orange);
+    color: var(--main-grey);
+    display: flex;
+    justify-content: center;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.info-container {
+    max-width: 32%;
+    height: auto;
+    border: 0.2rem solid var(--main-grey);
+    border-radius: 0.5rem;
+    margin: 2rem 0.1rem;
+}
+
+
+.info-container p {
+    margin: 0.5rem;
+    flex: auto;
+}
